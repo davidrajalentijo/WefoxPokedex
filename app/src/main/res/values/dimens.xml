@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="max_margin">24dp</dimen>
+    <dimen name="high_margin">12dp</dimen>
+    <dimen name="medium_margin">4dp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_high">20sp</dimen>
+    <dimen name="text_max">30sp</dimen>
+    <dimen name="text_error">44sp</dimen>
+    <dimen name="padding">20sp</dimen>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name_pokemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/high_margin"
+            android:text="@string/pokemon_name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_max"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/image_pokemon"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_pokemon"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/weight_pokemon_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/medium_margin"
+            android:text="@string/pokemon_weight"
+            android:textColor="@color/textDark"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_pokemon"/>
+
+        <TextView
+            android:id="@+id/weight_pokemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:text="@string/pokemon_weight"
+            app:layout_constraintStart_toEndOf="@id/weight_pokemon_label"
+            app:layout_constraintTop_toBottomOf="@+id/image_pokemon"/>
+
+        <TextView
+            android:id="@+id/height_pokemon_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/medium_margin"
+            android:text="@string/pokemon_height"
+            android:textColor="@color/textDark"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weight_pokemon"/>
+
+        <TextView
+            android:id="@+id/height_pokemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:text="@string/pokemon_height"
+            app:layout_constraintStart_toEndOf="@id/height_pokemon_label"
+            app:layout_constraintTop_toBottomOf="@+id/weight_pokemon"/>
+
+        <Button
+            android:id="@+id/catch_pokemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capture_text"
+            android:layout_marginTop="@dimen/max_margin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/height_pokemon"/>
+
+        <Button
+            android:id="@+id/run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/run_text"
+            android:layout_marginTop="@dimen/high_margin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/catch_pokemon"/>
+
+        <android.support.constraint.Group
+            android:id="@+id/pokemon_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="run, height_pokemon, height_pokemon_label, name_pokemon, image_pokemon, weight_pokemon,
+            weight_pokemon_label"/>
+
+        <include layout="@layout/pokemon_not_found"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

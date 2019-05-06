@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WefoxPokedex</string>
+    <string name="tab_text_1">Pokedex</string>
+    <string name="tab_text_2">Search Pokemons</string>
+    <string name="capture_text">Throw a pokeball</string>
+    <string name="run_text">Find another Pokemon</string>
+    <string name="pokemon_in_pokedex_text">You have this Pokemon</string>
+    <string name="pokemon_name">Pokemon</string>
+    <string name="pokemon_height">Height</string>
+    <string name="pokemon_weight">Weight</string>
+    <string name="pokemon_stats">Stats</string>
+    <string name="pokemon_type">Type</string>
+    <string name="pokemon_base_experience">Base Experience</string>
+    <string name="date_captured_experience">Date Captured</string>
+    <string name="pokemon_error">Try again</string>
+    <string name="pokemon_error_message">Something wrong happened</string>
+    <string name="pokemon_captured">Captured</string>
+</resources>
